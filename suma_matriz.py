@@ -37,5 +37,7 @@ while k < len(elementos):
         for j in range(n):
             matriz[i][j] = elementos[k]
             k = k + 1
-print("La matriz de orden ", n, " es: ", matriz)
+print("La matriz de orden ", n, " es: ")
+for i in range(n):
+    print(matriz[i])
 simpleArraySum(matriz)
