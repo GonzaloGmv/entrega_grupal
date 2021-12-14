@@ -2,7 +2,7 @@
 
 La dirección de github para nuestro repositorio es: [ github](https://github.com/GonzaloGmv/entrega_grupal)
 
-### Ejercicio 1
+### Ejercicio 1. Suma simple de una matriz
 En este ejercicio hemos realizado una suma de los elementos de una matriz. Al principio hicimos la función para sumar los elementos, y pensábamos que con eso era sufuciente, pero a la hora de añadir el código que venía dado, no nos depuraba, por lo que tuvimos que crear un código para todo lo demás.
 
 El código de este ejercicio es el siguiente:
@@ -51,7 +51,7 @@ for i in range(n):
     print(matriz[i])
 simpleArraySum(matriz)
 ```
-### Ejercicio 3
+### Ejercicio 3. Una suma muy grande
 En este ejercicio hemos realizado la suma de los elementos de una matriz, teniendo en cuenta que estos elementos pueden ser muy grandes. Para hacer esto, nos dimos cuenta de que se hacía igual que el ejercicio 1, así que copiamos el ejercicio 1 y cambiamos alguna cosa como el nombre de la función, y la salida, para que coincidieran con el enunciado.
 
 El código de este ejercicio es el siguiente:
@@ -99,4 +99,23 @@ print("La matriz de orden ", n, " es: ")
 for i in range(n):
     print(matriz[i])
 aVeryBigSum(matriz)
+```
+### Ejercicio 4. La escalera
+En este ejercicio había que realizar una escalera de n filas utilizando "#" y espacios. Al hacer este ejercicio, nos hemos dado cuenta de que no se podía hacer una escalera centrada, ya que un "#" ocupa lo mismo que un espacio, por lo que siempre quedarían alineadas a un lado o al otro. La única forma que hemos encontrado de que quede centrado es con un espacio después de cada #.
+
+El código de este ejercicio es el siguiente:
+
+```
+def staircase(n):
+    for i in range(n):
+        print(" " * (n - (i + 1)), '# ' *(i + 1))
+
+while True:
+    n = input("Escriba un número entero: ")
+    try:
+        n = int(n)
+        break
+    except:
+        pass
+staircase(n)
 ```
