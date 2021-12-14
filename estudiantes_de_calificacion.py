@@ -6,16 +6,10 @@ def gradingStudents(calificaciones):
                 calificaciones[i] = redondeo * 5
     print(calificaciones)
 
-continuar = True
+continuar = False
 while True:
     notas = input("Escriba las calificaciones separadas por espacios: ")
     lista_notas = notas.split()
-    for i in range(len(lista_notas)):
-        if lista_notas[i] != '100' and len(lista_notas[i]) >= 3:
-            continuar = False
-            break
-    if continuar == False:
-        pass
     try:
         for i in range(len(lista_notas)):
             lista_notas[i] = int(lista_notas[i])
@@ -24,6 +18,11 @@ while True:
     else:
         for i in range(len(lista_notas)):
             if lista_notas[i] < 0 or lista_notas[i] > 100:
-                pass
-        break
+                continuar = True
+                break
+        if continuar == True:
+            pass
+        else:
+            break
+        
 gradingStudents(lista_notas)
