@@ -15,3 +15,9 @@ import sys
 # 5. INTEGER_ARRAY apples
 # 6. INTEGER_ARRAY oranges
 #
+
+def countApplesAndOranges(s, t, a, b, apples, oranges):
+    manzanasdentro = 0
+    naranjasdentro = 0
+    
+
