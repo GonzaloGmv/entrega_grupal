@@ -89,3 +89,9 @@ if __name__ == "__main__":
     k = int(first_multiple_input[2])
 
     laberinto = []
+    for n_itr in range(n):
+        print("Fila" + str(n_itr) + " del laberinto: (# muro, % salida, * bomba, $ vacia o tunel)")
+        row = input()
+        laberinto.append(list(row))
+    tuneles=[]
+    
