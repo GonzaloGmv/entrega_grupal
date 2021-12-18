@@ -151,7 +151,7 @@ aVeryBigSum(matriz)
 ### Ejercicio 4. La escalera
 En este ejercicio había que realizar una escalera de n filas utilizando "#" y espacios. Al hacer este ejercicio, nos hemos dado cuenta de que no se podía hacer una escalera centrada, ya que un "#" ocupa lo mismo que un espacio, por lo que siempre quedarían alineadas a un lado o al otro. La única forma que hemos encontrado de que quede centrado es con un espacio después de cada #.
 
-El código de este ejercicio es el siguiente:
++ El código de este ejercicio es el siguiente:
 
 ```
 def staircase(n):
