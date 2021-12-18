@@ -61,4 +61,18 @@ def exploracion(Casillax, Casillay, laberinto, n, m, tuneles):
         coordenadas = buscatunel(Casillax - 1, Casillay, tuneles)
         laberintocopia[Casillax][Casillay] = "#"
         probabilidad += exploracion(coordenadas.x, coordenadas.y, laberintocopia, n, m, tuneles)/den
-        
+    if(Casillax < n-1 and laberinto[Casillax + 1][Casillay] == "$"):
+        laberintocopia = laberinto
+        coordenadas = buscatunel(Casillax + 1, Casillay, tuneles)
+        laberintocopia[Casillax][Casillay] = "#"
+        probabilidad += exploracion(coordenadas.x, coordenadas.y, laberintocopia, n, m, tuneles)/den
+    if(Casillay < m-1 and laberinto[Casillax][Casillay + 1] == "$"):
+        laberintocopia = laberinto
+        coordenadas = buscatunel(Casillax, Casillay + 1, tuneles)
+        laberintocopia[Casillax][Casillay] = "#"
+        probabilidad += exploracion(coordenadas.x, coordenadas.y, laberintocopia, n, m, tuneles)/den
+    if(Casillay > 0 and laberinto[Casillax][Casillay - 1] == "$"):
+        laberintocopia = laberinto
+        coordenadas = buscatunel(Casillax, Casillay - 1, tuneles)
+        laberintocopia[Casillax][Casillay] = "#"
+        probabilidad += exploracion(coordenadas.x, coordenadas.y, laberintocopia, n, m, tuneles)/den
