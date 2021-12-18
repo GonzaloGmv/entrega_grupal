@@ -23,12 +23,12 @@ def buscatunel(Casillax, Casillay, tuneles):
     Coordenadas = coordenadas(Casillax, Casillay)
     for t in tuneles:
         if(t.extremo1.comparate(Casillax, Casillay) == True):
-            coordenadas.x = t.extremo2.x
-            coordenadas.y = t.extremo2.y
+            Coordenadas.x = t.extremo2.x
+            Coordenadas.y = t.extremo2.y
             break
         elif(t.extremo2.comparate(Casillax, Casillay) == True):
-            coordenadas.x = t.extremo1.x
-            coordenadas.y = t.extremo1.y
+            Coordenadas.x = t.extremo1.x
+            Coordenadas.y = t.extremo1.y
             break
         return Coordenadas
 
