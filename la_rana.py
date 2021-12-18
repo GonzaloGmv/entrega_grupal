@@ -82,4 +82,10 @@ if __name__ == "__main__":
     print("Dimensiones del laberinto y numero de tuneles: (filas columnas tuneles)")
     first_multiple_input = input().rstrip().split()
 
-    
+    n = int(first_multiple_input[0])
+
+    m = int(first_multiple_input[1])
+
+    k = int(first_multiple_input[2])
+
+    laberinto = []
