@@ -76,3 +76,10 @@ def exploracion(Casillax, Casillay, laberinto, n, m, tuneles):
         coordenadas = buscatunel(Casillax, Casillay - 1, tuneles)
         laberintocopia[Casillax][Casillay] = "#"
         probabilidad += exploracion(coordenadas.x, coordenadas.y, laberintocopia, n, m, tuneles)/den
+    return probabilidad
+
+if __name__ == "__main__":
+    print("Dimensiones del laberinto y numero de tuneles: (filas columnas tuneles)")
+    first_multiple_input = input().rstrip().split()
+
+    
