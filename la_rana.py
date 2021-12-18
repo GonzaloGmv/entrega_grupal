@@ -14,3 +14,9 @@ class coordenadas:
         else:
             return False
 
+class Tunel:
+    def __init__(self, x1, y1, x2, y2):
+        self.extremo1 = Coordenadas(x1,y1)
+        self.extremo2 = Coordenadas(x2,y2)
+
+def buscatunel(Casillax, Casillay, tuneles):
