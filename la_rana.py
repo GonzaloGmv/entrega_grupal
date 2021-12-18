@@ -30,7 +30,7 @@ def buscatunel(Casillax, Casillay, tuneles):
             coordenadas.x = t.extremo1.x
             coordenadas.y = t.extremo1.y
             break
-        return coordenadas
+        return Coordenadas
 
 def exploracion(Casillax, Casillay, laberinto, n, m, tuneles):
     num = 0
